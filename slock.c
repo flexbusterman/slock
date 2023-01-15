@@ -32,15 +32,15 @@
 
 #define POWEROFF 1
 #define USBOFF 1
-#define STRICT_USBOFF 0
-#define TWILIO_SEND 1
-#define WEBCAM_SHOT 1
+#define STRICT_USBOFF 1
+#define TWILIO_SEND 0
+#define WEBCAM_SHOT 0
 #define IMGUR_UPLOAD 0
-#define PLAY_AUDIO 1
-#define TRANSPARENT 1
+#define PLAY_AUDIO 0
+#define TRANSPARENT 0
 
 char *g_pw = NULL;
-int lock_tries = 0;
+int lock_tries = 3;
 
 typedef struct {
   int screen;
