@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #define _GNU_SOURCE
 #include <stdio.h>
+#include <crypt.h>
 #include <string.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -32,15 +33,15 @@
 
 #define POWEROFF 1
 #define USBOFF 1
-#define STRICT_USBOFF 0
+#define STRICT_USBOFF 1
 #define TWILIO_SEND 1
 #define WEBCAM_SHOT 1
 #define IMGUR_UPLOAD 0
-#define PLAY_AUDIO 1
-#define TRANSPARENT 1
+#define PLAY_AUDIO 0
+#define TRANSPARENT 0
 
 char *g_pw = NULL;
-int lock_tries = 0;
+int lock_tries = 5;
 
 typedef struct {
   int screen;
