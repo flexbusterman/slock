@@ -34,7 +34,7 @@
 #define POWEROFF 1
 #define USBOFF 1
 #define STRICT_USBOFF 1
-#define TWILIO_SEND 1
+#define TWILIO_SEND 0
 #define WEBCAM_SHOT 1
 #define IMGUR_UPLOAD 0
 #define PLAY_AUDIO 0
