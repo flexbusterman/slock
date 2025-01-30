@@ -41,7 +41,7 @@
 #define TRANSPARENT 0
 
 char *g_pw = NULL;
-int lock_tries = 5;
+int lock_tries = 4;
 
 typedef struct {
   int screen;
